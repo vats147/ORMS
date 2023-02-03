@@ -1,18 +1,38 @@
-# intialize git in our project 
->> git init
 
-#add files or changes in our project
->> git add *
+# Online Resturant Mangement System
+This is Online Resturant Mangement System which help for any resturant to manage their customer and their orders.
 
-# status of project
->> git status
+## Intialize git in our project 
+```bash
+ git init
+ ```
 
-# commit of your project 
+## Add files or changes in our project
+```bash
+ git add * 
+```
+      
+## Check status of project
+```bash
+git status
+```
+
+## Commit In your project
+```bash
 git commit  -m "Complete Login form with validation"
+```
 
-##Configuration
-# add path of github project in our project
-git remote add ORMS https://github.com/vats147/ORMS.git
+# Configuration
+## Add path of github project in our project
+```bash
+git remote add **ORMS** https://github.com/vats147/ORMS.git
+```
 
-# upload changes in github
-git push -u ORMS
+# Change branch
+Comming Soon 😁
+
+## upload changes in github
+command  + branch name
+```bash
+git push -u ORMS main 
+```
