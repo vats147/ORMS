@@ -25,7 +25,7 @@ git commit  -m "Complete Login form with validation"
 # Configuration
 ## Add path of github project in our project
 ```bash
-git remote add **ORMS** https://github.com/vats147/ORMS.git
+git remote add ORMS https://github.com/vats147/ORMS.git
 ```
 
 # Change branch
