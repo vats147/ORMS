@@ -1,0 +1,84 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-section{
+  position: relative;
+  background: #E4E9F7;
+  height: 100vh;
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+
+.home-section .home-content{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+  color: #11101d;
+  font-size: 35px;
+}
+.home-section .home-content .bx-menu{
+  margin: 0 15px;
+  cursor: pointer;
+}
+.home-section .home-content .text{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* --------------------- */
+.linebar{
+    padding: 2rem;
+    position: relative;
+    top: 35%;
+}
+.fom{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    box-shadow: 0px 0px 3px #888888;
+    background-color: #fff;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.hold{
+    margin: 1.2rem;
+    border: 1px solid black;
+    height: auto;
+    padding: 1rem;
+    background-color: #fff;
+}
+/* .down{
+  margin: 1.2rem;
+  width: 10rem;
+} */
+.op{
+  text-decoration: none;
+}
+.op:hover{
+  text-decoration: underline;
+}
+.immg{
+  height: 1.3rem;
+  width: 1.3rem;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.pro{
+  height: 2rem;
+  width: 2rem;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}

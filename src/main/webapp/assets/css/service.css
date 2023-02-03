@@ -1,0 +1,129 @@
+
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+
+.service-box{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-service img{
+    width: 100%;    
+    border-radius: 10px;
+}
+
+.overlay{
+    width: 100%;
+    height: 99%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background:linear-gradient(rgba(0,0,0,0.5),#fc5d35);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+}
+hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-size: 14px;
+}
+.single-service:hover .service-desc{
+    opacity: 1;
+    bottom: 40%;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    .banner-text h1{
+        font-size: 44px;
+    }
+    .banner-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .banner-btn a{
+        margin: 8px;
+    }
+    .title-text h1{
+        font-size: 35px;
+    }
+    .feature{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% ;
+    }
+    .testimonials-col{
+        flex-basis: 100%;
+    }
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img{
+        top: 25%;
+    }
+    .custom_heading {
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      .custom_heading-text {
+        text-align: center;
+      }
+      
+}
+

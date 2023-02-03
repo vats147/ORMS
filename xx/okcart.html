@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       
+       <style>
+              .show-when-loading {
+                  display: none;
+              }
+          
+              body.loading .show-when-loading {
+                  display: inline-block;
+              }
+          </style>
+          <body>
+              <button data-cart-add="12345678">Add a Product</button>
+              <img src="{{ 'loader.gif' | asset_url }}" class="" width="16" height="16" alt="Loading..." />
+          </body>
+
+          <script type="text/javascript">
+              $(function() {
+                  CartJS.init({{ cart | json }}, {
+                      "moneyFormat": "{{ shop.money_format }}",
+                      "moneyWithCurrencyFormat": "{{ shop.money_with_currency_format }}"
+                  });
+              });
+          </script>
+
+       <script src="cart.js"></script>
+</body>
+</html>

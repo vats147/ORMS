@@ -1,0 +1,225 @@
+.x {
+	width: 100vw;
+	height: 100vh;
+	/* background-color: orange; */
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button {
+	width: 300px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: black;
+	marging: 0 auto;
+	z-index: 5;
+	display: flex;
+	cursor: pointer;
+	padding: 15px;
+}
+.text {
+	z-index: 1;
+	color: white;
+	font-size: 30px;
+	margin: auto;
+	text-decoration: none;
+}
+#a {
+	display: none;
+}
+#a:target {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: black;
+	overflow-x: hidden;
+}
+#a:target + a {
+	display: none;
+}
+#a:target > .path {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	position: absolute;
+	left: 200%;
+	width: 50%;
+	height: 100%;
+	background-color: black;
+	-webkit-aation: linear alternate;
+	-webkit-aation-name: path;
+	-webkit-aation-duration: 4s;
+	-webkit-aation-delay: 3s;
+}
+#a:target > .path > .stripes {
+	width: 15px;
+	height: 5px;
+	background-color: white;
+	display: inline;
+	margin-right: 7px;
+  overflow-x: auto;
+}
+#a:target> .p {
+	width: 30px;
+	height: 30px;
+	background-color: orange;
+	align-self: center;
+	-webkit-box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	-moz-box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	position: relative;
+	z-index: 400;
+	right: 200%;
+	position: absolute;
+	-webkit-aation: linear alternate;
+	-webkit-aation-name: pack;
+	-webkit-aation-duration: 5s;
+}
+#a:target > .c {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-color: black;
+	position: relative;
+	-webkit-box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	-moz-box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	box-shadow: -3px -5px 9px 0px rgba(56, 54, 45, 1);
+	z-index: 500;
+	position: absolute;
+	left: 200%;
+	-webkit-aation: ease-in-out alternate;
+	-webkit-aation-name: example;
+	-webkit-aation-duration: 5s;
+}
+#a:target > .c > .busBack {
+	width: 40%;
+	height: 100%;
+	background-color: yellow;
+}
+#a:target > .c > .busFront {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 60%;
+}
+#a:target > .c > .busFront > .busFrontMain {
+  border: 1px solid brown;
+	border-bottom: 50px solid brown;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	transform: rotate(90deg);
+	height: 0;
+	width: 30px;
+}
+
+#a:target > .c > .busFront > .topLight {
+	border-bottom: 50px solid yellow;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	transform: rotate(270deg);
+	height: 0;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	position: relative;
+	position: absolute;
+	width: 1px;
+	visibility: visible;
+	opacity: 1;
+	-webkit-aation: ease-in alternate;
+	-webkit-aation-name: light;
+	-webkit-aation-duration: 5s;
+}
+#a:target > .c > .busFront > .bottomLight {
+	border-bottom: 50px solid yellow;
+	opacity: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	transform: rotate(270deg);
+	height: 0;
+	bottom: 0;
+	right: 0;
+	position: relative;
+	position: absolute;
+	width: 1px;
+	-webkit-aation: ease-in alternate;
+	-webkit-aation-name: light;
+	-webkit-aation-duration: 5s;
+}
+@-webkit-keyframes example {
+	0% {
+		left: 200%;
+	}
+	30% {
+		left: 10%;
+	}
+	40% {
+		left: 10%;
+	}
+	100% {
+		left: 200%;
+	}
+}
+@-webkit-keyframes path {
+	0% {
+		left: 50%;
+	}
+	20% {
+		left: 0;
+	}
+	100% {
+		left: 200%;
+	}
+}
+@-webkit-keyframes pack {
+	0% {
+		right: 70%;
+	}
+	30% {
+		left: 0;
+	}
+	40% {
+		left: 15%;
+	}
+	100% {
+		left: 200%;
+	}
+}
+@-webkit-keyframes light {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#a:target > .final {
+	text-align: center;
+	position: relative;
+	z-index: -700;
+	color: white;
+	font-size: 30px;
+	margin: auto;
+	text-decoration: none;
+	-webkit-aation: linear alternate;
+	-webkit-aation-name: final;
+  -webkit-aation-fill-mode: forwards;
+	-webkit-aation-delay: 1s;
+	-webkit-aation-duration: 10s;
+}
+@-webkit-keyframes final {
+	0% {
+		z-index: -700;
+	}
+	100% {
+		z-index: 700;
+	}
+}
