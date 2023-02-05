@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_POST["id"])) {
     error_reporting(E_WARNING);
-    // if(1){
+    // if(1){xx/retrivedata.php
 
     //promocode page 
     if ($_POST["id"] == "promocode")

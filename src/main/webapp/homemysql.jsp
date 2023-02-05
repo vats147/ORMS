@@ -27,7 +27,7 @@ try{
 	Statement statement = null;
 	ResultSet resultSet = null;
 			Connection con = null;	
-			 System.out.println("Hello World");
+			 System.out.println("Hello Wor ld");
 			// Class.forName("com.mysql.jdbc.Driver");  
 			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/rms","root","");
 			 System.out.println("Hell");

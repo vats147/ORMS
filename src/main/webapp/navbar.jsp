@@ -85,8 +85,8 @@ session_start();
                         }
                                 ?>
                                  --%>
+                             <li class="scroll-to-section"><button style="border:none; border:2px solid ornage"><a href="login.jsp"> SignIn/Up</a></button></li> 
                             <li class="scroll-to-section"><a href="temp.php"><i class="fa fa-shopping-cart"></i></li>
-                            <!-- <li class="scroll-to-section"><button style="border:none; border:2px solid ornage"><a href="Login.php"> SignIn/Up</a></button></li> -->
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
